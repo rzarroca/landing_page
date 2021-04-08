@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page Project by Ricardo Zarroca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="./images/logo.jpg" alt="Imagen Logo">
+        </figure>
+        <h1>Crochet Lorem Ipsum</h1>
+        <p>Tu lugar de bordados</p>
+        <nav>
+            <a href="#products" target="_self">Productos</a>
+            <a href="#projects" target="_self">Proyectos</a>
+            <a href="#about" target="_self">Info</a>
+            <a href="#blog" target="_self">Blog</a>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section id="products">
+            <h2>Nuestros Productos!</h2>
+            
+            <article class="clearfix">
+                <h3>Mr. Froj</h3>
+                <figure>
+                    <img src="./images/mrFroj.jpg" alt="Imagen de Mr. Froj colgado">
+                    <figcaption>Mr. Froj con su panza llena</figcaption>
+                </figure>
+                <p>Una rana siempre hambrienta y siempre lista para sostener tus marcadores.</p>
+                <p>Precio: €40</p>
+                <button>Lo Quiero!</button>
+            </article>
+
+            <article class="clearfix">
+                <h3>Bugs el conejito</h3>
+                <figure>
+                    <img src="./images/bunny.jpg" alt="Imagen de un conejito de hilo">
+                    <figcaption>Eso es todo amigos!</figcaption>
+                </figure>
+                <p>Un pequeño conejito de lana, ideal para hacer compañía a tus plantas.</p>
+                <p>Precio: €50</p>
+                <button>Lo Quiero!</button>
+            </article>
+
+            <article class="clearfix">
+                <h3>Futuros proyectos</h3>
+                <figure>
+                    <img src="./images/workingProject.jpg" alt="Imagen de un futuro proyecto">
+                    <figcaption>Trabajando con mucho amor!</figcaption>
+                </figure>
+                <p>En breve verán nuevos y variados proyectos.</p>
+                <p>Precio: ---</p>
+                <button disabled>lo quiero!</button>
+            </article>
+        </section>
+
+
+        <section id="project">
+            <h2>Haznos tu pedido particular!</h2>
+            <p>
+                Un regalo especial, una idea única, la cabecera de tu cama... <br>
+                Nosotros hacemos realidad tu idea!
+            </p>
+            <figure>
+                <img src="./images/threadBox.jpg" alt="Imagen de una caja llena de hilos">
+                <figcaption>Materia prima de primera calidad</figcaption>
+            </figure>
+            
+            <form action="https://www.freecodecamp.com/email-submit" method="get">
+                <fieldset>
+                    <legend>Dejanos aquí tu consulta</legend>
+                
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="name" id="name" placeholder="Pepito Perez" required>
+
+                    
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="direccion@lala.com" required>
+
+                    <label for="phone">Teléfono: </label>
+                    <input type="tel" name="phone" id="phone" placeholder="+34...">
+
+                    <label for="request">Detalles: </label>
+                    <textarea name="request" id="request" cols="30" rows="10"></textarea>
+                </fieldset>
+            </form>
+        </section>
+        
+        
+        <section id="about">
+            <h2>Más sobre nosotros:</h2>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et id molestias expedita impedit tenetur, reprehenderit non numquam officiis consequuntur fugit esse incidunt ab, tempora laudantium consectetur itaque. Minus molestiae iusto ipsa. Possimus iste atque quod id eligendi labore sint? Eligendi hic optio perspiciatis accusamus porro ipsam! Porro optio aperiam veniam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, excepturi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eaque itaque error iure cumque ipsum voluptatem architecto impedit! Commodi vero dolorem similique voluptates modi. Unde!</p>
+
+            <video width="320" height="240" autoplay muted controls>
+                <source src="./videos/knitting.mp4" type="video/mp4">
+                Tu navegador no soporta este tipo de video
+            </video>
+            
+        </section>
+
+    </main>
+
+    <aside id="blog">
+        <h2>Aprende a hacerlo tu mismo:</h2>
+        <a href="#" target="_blank">Elementos necesarios para comenzar</a>
+        <a href="#" target="_blank">Primeros pasos</a>
+        <a href="#" target="_blank">Tu primer proyecto</a>
+        <a href="#" target="_blank">Como seleccionar el hilo correcto</a>
+
+    </aside>
+
+    <footer>
+        <p>
+            This project was made by <a href="https://www.linkedin.com/in/ricardozarroca" target="_blank">Ricardo Zarroca</a>, to get the FreeCodeCamp´s Responsive Web Certification.   
+        </p>
+        <p>
+            If you want, check my <a href="https://github.com/rzarroca">gitHub portfolio</a> for more projects like this.
+        </p>
+    </footer>
+
+</body>
+</html>
