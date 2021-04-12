@@ -11,7 +11,7 @@ body {
     background-color: blanchedalmond;
 }
 
-header{
+header {
     text-align: center;
     padding: 0px 0vw;
     background-image: url("../images/big_header.jpg");
@@ -55,8 +55,20 @@ nav a {
 }
 
 main, aside {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+
+}
+
+.grid > * {
+    flex: 1 1 300px;
 }
 
 h2 {
@@ -85,7 +97,7 @@ article figure, header figure {
   }
 
   img {
-    max-width: 200px;
+    max-width: 180px;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
 }
