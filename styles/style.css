@@ -35,7 +35,7 @@ h1+p  {
     font-family: 'meriendabold';
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     h1  {
         font-size: 50px;
     }
@@ -55,7 +55,7 @@ nav a {
 }
 
 main, aside {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -68,7 +68,7 @@ main, aside {
 }
 
 .grid > * {
-    flex: 1 1 300px;
+    flex: 1 1 400px;
 }
 
 h2 {
@@ -90,14 +90,71 @@ article figure, header figure {
     font-size: 14px;
 }
 
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
+section .clearfix {
+    border: 4px inset rgba(186, 186, 182, 0.15);
+    border-radius: 5px;
+    background-color: rgba(244, 229, 205, 0.72);
+
+}
+
+.price {
+    font-style: italic;
+    font-size: large;
+    font-weight:bolder;
+    color: whitesmoke;
+    text-shadow: 0 0 1px black;
+
+}
+
+button {
+    background: rgb(151,195,173);
+    background: radial-gradient(circle, rgba(161, 200, 180, 0.76) 5%, rgb(225, 197, 174) 80%);
+    padding: 8px;
+    font-size: 14px;;
+    border-radius: 8px;
+    border-color: rgba(186, 186, 182, 0.15);
+    text-align: center;
+    text-transform: uppercase;   
+}
+
+button:hover {
+    box-shadow: 0 0 2px black;
+}
 
   img {
     max-width: 180px;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
 }
+
+form input, form textarea {
+    display: block;
+}
+
+legend {
+    font-family: 'meriendabold';
+}
+
+#project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#project > * {
+    flex: 1 1 200px
+}
+
+#project h2 {
+    flex-basis: 100%;
+}
+
+#project img {
+    max-width: 100%;
+}
+
