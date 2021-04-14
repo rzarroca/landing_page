@@ -8,19 +8,23 @@ body {
     font-family: 'arquitect', monospace;
     font-size: 16px;
     line-height: 1.5;
-    background-color: blanchedalmond;
+    background-color: #f3e8cb;
 }
 
 header {
     text-align: center;
-    padding: 0px 0vw;
+    padding: 0 0;
+    color: #99e1e5ec;
+    text-shadow: 0.5px 0.5px 5px black;
+ 
+}
+
+header div {
     background-image: url("../images/big_header.jpg");
     background-color: lightslategrey;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: whitesmoke;
-    text-shadow: 0 0 2px black;
     border-radius: 10px;
 }
 
@@ -52,6 +56,15 @@ nav {
 
 nav a {
     flex: 1 1 300px;
+    background: rgb(242,198,180);
+    background: radial-gradient(circle, rgb(242, 198, 180) 0%, rgb(243, 232, 203) 80%);
+    color: #99e1e5;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    transform-origin: center top;
 }
 
 main, aside {
@@ -75,6 +88,8 @@ h2 {
     font-size: 30px;
     text-align: center;
     font-family: 'meriendabold';
+    color: #99e1e5;
+    text-shadow: 0 0 5px black;
 }
 
 
@@ -87,7 +102,7 @@ h3 {
 article figure, header figure {
     float: left;
     font-family: 'meriendabold';
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
@@ -97,9 +112,9 @@ article figure, header figure {
     display: table;
 }
 section .clearfix {
-    border: 4px inset rgba(186, 186, 182, 0.15);
     border-radius: 5px;
-    background-color: rgba(244, 229, 205, 0.72);
+    background: rgb(251,175,175);
+    background: linear-gradient(180deg, rgba(251,175,175,0.7) 0%, rgba(243,232,203,1) 50%);
 
 }
 
@@ -107,28 +122,31 @@ section .clearfix {
     font-style: italic;
     font-size: large;
     font-weight:bolder;
-    color: whitesmoke;
+    color: rgb(153, 225, 229);
     text-shadow: 0 0 1px black;
 
 }
 
 button {
-    background: rgb(151,195,173);
-    background: radial-gradient(circle, rgba(161, 200, 180, 0.76) 5%, rgb(225, 197, 174) 80%);
-    padding: 8px;
+    background: rgb(153,225,229);
+    background: radial-gradient(circle, rgba(153,225,229,0.9) 0%, rgba(242, 198, 180, 0.5) 100%);
+    padding: 10px;
     font-size: 14px;;
     border-radius: 8px;
-    border-color: rgba(186, 186, 182, 0.15);
+    border-color: rgba(153, 225, 229, 0.3);
     text-align: center;
     text-transform: uppercase;   
 }
 
+
 button:hover {
-    box-shadow: 0 0 2px black;
+    box-shadow: 0px 0px 5px black;
+    background: radial-gradient(circle, rgba(153,225,229,0.9) 50%, rgba(242,198,180,0.9) 100%);
+    transform: scale(1.05);
 }
 
-  img {
-    max-width: 180px;
+img {
+    max-width: 200px;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
 }
@@ -158,3 +176,5 @@ legend {
     max-width: 100%;
 }
 
+
+/* https://colorhunt.co/palette/124272 */
