@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Project by Ricardo Zarroca</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#products" target="_self">Productos</a>
+            <a class="nav-link" href="#project" target="_self">Proyectos</a>
+            <a class="nav-link" href="#about" target="_self">Info</a>
+            <a class="nav-link" href="#blog" target="_self">Blog</a>
+        </nav>
         <div class="clearfix">
             <figure>
-                <img src="./images/logo.jpg" alt="Imagen Logo">
+                <img id="header-img" src="./images/logo.jpg" alt="Imagen Logo">
             </figure>
             <h1>Crochet Lorem Ipsum</h1>
             <p>Tu lugar de bordados</p>
         </div>
-        <nav>
-            <a href="#products" target="_self">Productos</a>
-            <a href="#project" target="_self">Proyectos</a>
-            <a href="#about" target="_self">Info</a>
-            <a href="#blog" target="_self">Blog</a>
-        </nav>
     </header>
 
     <main class="clearfix">
@@ -79,7 +80,7 @@
             </div>
            
             
-            <form action="https://www.freecodecamp.com/email-submit" method="get">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
                 <fieldset>
                     <legend>Dejanos aquí tu consulta</legend>
                 
@@ -95,6 +96,8 @@
 
                     <label for="request">Detalles: </label>
                     <textarea name="request" id="request" cols="30" rows="10"></textarea>
+
+                    <input type="submit" name="submit" id="submit" value="Enviar consulta">
                 </fieldset>
             </form>
         </section>
@@ -102,7 +105,7 @@
         
         <section id="about">
             <h2>Más sobre nosotros:</h2>
-            <video width="30%" autoplay loop muted>
+            <video id="video" width="30%" autoplay loop muted>
                 <source src="./videos/knitting.mp4" type="video/mp4">
                 Tu navegador no soporta este tipo de video
             </video>
@@ -148,6 +151,6 @@
             <a href="https://www.linkedin.com/in/ricardozarroca"><img src="./images/linkedin.png" alt="FreeCodeCamp link"></a>
         </div>
     </footer>
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
